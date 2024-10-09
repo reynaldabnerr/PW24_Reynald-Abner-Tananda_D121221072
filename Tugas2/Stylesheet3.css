@@ -40,10 +40,18 @@ button {
   background-color: #555;
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Adding smooth transition */
 }
 
 button.active {
   background-color: #4caf50;
+  font-weight: bold;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #3498db;
+  transform: scale(1.05); /* Slightly enlarges the button when hovered */
 }
 
 h2 {
